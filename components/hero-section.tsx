@@ -59,22 +59,24 @@ export function HeroSection() {
 
           {/* CTA buttons */}
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <motion.button
+            <motion.a
+              href="#trade"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground glow-primary transition-all hover:brightness-110"
             >
               <Play className="h-5 w-5" />
               Start Trading Free
-            </motion.button>
+            </motion.a>
             
-            <motion.button
+            <motion.a
+              href="#leaderboard"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-8 py-4 text-lg font-semibold text-foreground transition-all hover:bg-secondary"
             >
               Watch Demo
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
 
